@@ -1,24 +1,78 @@
+body{
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
 header{
-    background-color: black;
-    color: white;
     display: flex;
-    padding: 10px;
     justify-content: space-between;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0,637);
-}
-nav a{
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-}
-nav a:hover{
-    background-color: crimson;
-    transition: 0.2s;
-}
-nav{
-    padding:10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(219, 221, 225);
 }
 .banner{
-    background-color: crimson;
+    padding: 10px;
+}
+
+nav{
     padding: 10px 20px;
+}
+nav a{
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+section.home{
+    height: 800px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20250323/pngtree-fresh-blueberries-atop-creamy-yogurt-on-wooden-table-close-up-shot-photo-photo-image_70454002.webp");
+}
+.containerHome{
+    width: 50%;
+    margin-left: 10px;
+    padding-top: 25px;
+}
+
+section.about {
+   height: 800px;
+}
+.containerAbout{
+    width: 50%;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    & img{
+         width:200px;
+    }
+}
+section.profile{
+    height: 800px;
+    padding-top: 50px;
+}
+.cardProfile{
+    background-color: rgb(213, 209, 209);
+    padding: 15px;
+    width:300px;
+    margin: auto;
+    text-align: center;
+}
+img{
+    width:100%;
+}
+.medsos{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height:40px;
+    padding-top:5px;
+}
+.medsos a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 24px;
 }
