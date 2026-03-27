@@ -1,90 +1,159 @@
-body{
-    margin: 0px;
-    font-family: Helvetica; 
-    background-color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    background-color: rgb(33, 7, 69);
-    
-}
-
-header div.banner a {
-    color:aliceblue;
-    text-decoration: none; 
-}
-
-.banner{
-    padding: 10px;
-}
-
-nav{
-    padding: 10px 20px;
-}
-nav a{
-    padding: 5px 15px;
-    text-decoration: none;
-}
-
-section.home{
-    height: 800px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20250323/pngtree-fresh-blueberries-atop-creamy-yogurt-on-wooden-table-close-up-shot-photo-photo-image_70454002.webp");
 }
 .containerHome{
     width: 50%;
     margin-left: 10px;
     padding-top: 25px;
+    padding-left: 50px;
+    color: #BDB395;
 }
 
 section.about {
    height: 800px;
 }
-.containerAbout{
-    width: 50%;
-    margin: auto;
-    padding: 50px 20px;
-    text-align: center;
-    & img{
-         width:200px;
-    }
-}
 section.profile{
-    height: 800px;
+    height: 325px;
     padding-top: 50px;
+    width:500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.home {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff6f9, #fdfdfd);
+    color: #333;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20250916/pngtree-fresh-breakfast-bowl-with-yogurt-mixed-berries-granola-and-honey-presented-image_19367206.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:375px;
+    text-align: auto;
+    color:#F2E2B1;
+}
+.containerHome{
+    width: 50%;
+    margin-left: 50px;
+    padding-top: 100px;
+}
+section.project {
+   height: 600px;
+   color: #BDB395;
+   padding-left: 100px;
+   padding-top: 100px;
+   background: linear-gradient(#FFE8CD, #ffd0b0);
+   font-family: 'Poppins', sans-serif;
+}
+.containerProject{
+    width: 50%;
+    margin: 10px;
+    padding-top: 25px;
+    text-align: left;
+}
+    section.profile{
+    height: 800px;
+    padding-top: 100px;
+    padding-left: 45px;
+}
+section.about{
+    height:400px;
+    padding-top: 100px;
+    padding-left: 100px;
+    color: #BDB395;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#ffd0b0, #ffc8a3);
 }
 .cardProfile{
-    background-color: rgb(59, 0, 79);
+    background-color: rgb(213, 209, 209);
     padding: 15px;
     width:300px;
     margin: auto;
     text-align: center;
 }
-img{
-    width:100%;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #ff9aa2, #ffb7b2);
+    color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
-.medsos{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    height:40px;
-    padding-top:5px;
-}
-.medsos a{
+
+.banner a {
+    color: white;
     text-decoration: none;
-    padding: 10px 10px;
     font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: 2s;
+}
+
+nav a::after {
+    content: '';
+}
+.profile {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardProfile {
+    background: linear-gradient(145deg, #eeb5b5, #ffe5ec);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    width: 270px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.cardProfile:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.cardProfile img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.cardProfile h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.cardProfile p {
+    margin-top: 5px;
+    color: #777;
+}
+
+.medsos a {
+    margin: 10px;
+}
+.about{
+    height: 300px;
+    color:#F2E2B1;
 }
 section.profile{
-    color:antiquewhite;
+    background: linear-gradient(#ffc8a3, #ffbe93);
+    color: black;
 }
